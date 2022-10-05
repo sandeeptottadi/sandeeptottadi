@@ -1,0 +1,269 @@
+.main-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh + 20px);
+}
+
+section {
+  padding: 0%;
+  margin: 0%;
+  height: 100vh;
+}
+
+.main {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.moon {
+  position: absolute;
+  left: 60%;
+  top: 13%;
+}
+
+.moon-img {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  translate: 0%;
+  z-index: 2;
+}
+
+.portfolio {
+  position: absolute;
+  color: rgb(255, 53, 87);
+  font-size: 50px;
+  translate: 0% -50%;
+  font-weight: 900;
+  left: -10%;
+  top: 50%;
+  font-family: "futura_b";
+  text-shadow: 0 10px 15px rgb(2 11 22 / 20%);
+  letter-spacing: 0.1em;
+  z-index: 3;
+}
+.shadow {
+  height: 400px;
+  width: 400px;
+}
+
+.front-shadow-1 {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  z-index: 3;
+}
+
+.front-shadow-2 {
+  position: absolute;
+  bottom: -25%;
+  left: -40%;
+  z-index: 3;
+}
+
+.back-shodow-1 {
+  position: absolute;
+  top: -20%;
+  left: -30%;
+  z-index: 1;
+}
+.back-shodow-2 {
+  position: absolute;
+  top: -20%;
+  right: -30%;
+  z-index: 1;
+}
+
+.main-title {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  top: 50%;
+  translate: 0% -50%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  line-height: 1;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.6rem;
+  font-family: "futura_m";
+  font-weight: normal;
+  text-shadow: 0 10px 30px rgb(2 11 22 / 50%);
+  font-size: 5rem;
+}
+
+.line-1 {
+  height: 5px;
+  width: 100px;
+  background-color: rgb(255, 53, 87);
+}
+
+.line-2 {
+  margin-top: 15px;
+  margin-left: 30px;
+  height: 5px;
+  width: 100px;
+  background-color: rgb(255, 53, 87);
+  transition: all 1.5s ease-in-out;
+}
+
+.about {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  white-space: normal;
+}
+
+@media (max-width: 950px) {
+  .moon-img {
+    height: 480px;
+    width: 480px;
+  }
+  .moon {
+    left: 50%;
+  }
+  .name {
+    font-size: 4rem;
+  }
+  .shadow {
+    height: 350px;
+    width: 350px;
+  }
+  .front-shadow-2 {
+    left: -30%;
+  }
+}
+
+@media (max-width: 850px) {
+  .moon-img {
+    height: 370px;
+    width: 370px;
+  }
+  .moon {
+    left: 54%;
+    top: 21%;
+  }
+  .name {
+    font-size: 3rem;
+  }
+  .shadow {
+    height: 300px;
+    width: 300px;
+  }
+  .front-shadow-2 {
+    left: -30%;
+  }
+  .main-title {
+    height: 350px;
+    width: 350px;
+  }
+  .about {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .moon-img {
+    height: 340px;
+    width: 340px;
+  }
+  .portfolio {
+    font-size: 2rem;
+  }
+  .moon {
+    left: 54%;
+    top: 21%;
+  }
+  .name {
+    font-size: 2.5rem;
+  }
+  .shadow {
+    height: 260px;
+    width: 260px;
+  }
+  .front-shadow-2 {
+    left: -30%;
+  }
+  .main-title {
+    height: 300px;
+    width: 300px;
+  }
+  .about {
+    font-size: 1rem;
+  }
+  .line-1 {
+    width: 80px;
+  }
+  .line-2 {
+    width: 80px;
+  }
+}
+
+@media (max-width: 450px) {
+  .moon-img {
+    height: 230px;
+    width: 230px;
+  }
+  .portfolio {
+    font-size: 1.9rem;
+    left: -30%;
+  }
+  .moon {
+    left: 24%;
+    top: 21%;
+  }
+  .name {
+    font-size: 2.2rem;
+    font-weight: 900;
+  }
+  .shadow {
+    height: 180px;
+    width: 180px;
+  }
+  .front-shadow-2 {
+    left: -30%;
+  }
+  .main-title {
+    top: 75%;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 350px) {
+  .moon-img {
+    height: 200px;
+    width: 200px;
+  }
+  .portfolio {
+    font-size: 1.7rem;
+    left: -30%;
+  }
+  .moon {
+    left: 24%;
+    top: 21%;
+  }
+  .name {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .shadow {
+    height: 150px;
+    width: 150px;
+  }
+  .front-shadow-2 {
+    top: 50%;
+    left: -30%;
+  }
+  .main-title {
+    top: 70%;
+    height: 200px;
+    width: 200px;
+  }
+}
