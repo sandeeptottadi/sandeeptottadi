@@ -3,6 +3,7 @@
   padding: 0;
   background-color: #072041;
   width: 100%;
+  overflow-x: hidden;
   color: white;
 }
 

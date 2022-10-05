@@ -207,11 +207,11 @@ section {
 
 @media (max-width: 450px) {
   .moon-img {
-    height: 230px;
-    width: 230px;
+    height: 250px;
+    width: 250px;
   }
   .portfolio {
-    font-size: 1.9rem;
+    font-size: 2rem;
     left: -30%;
   }
   .moon {
@@ -219,7 +219,7 @@ section {
     top: 21%;
   }
   .name {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 900;
   }
   .shadow {
@@ -230,9 +230,12 @@ section {
     left: -30%;
   }
   .main-title {
-    top: 75%;
+    top: 70%;
     height: 200px;
     width: 200px;
+  }
+  .about {
+    font-size: 1.2rem;
   }
 }
 

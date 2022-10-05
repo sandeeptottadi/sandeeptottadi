@@ -11,7 +11,6 @@ export default function Projects() {
   const animate_project_image = useAnimation();
   const animate_p_i = useAnimation();
   useEffect(() => {
-    console.log(mainInView);
     if (mainInView) {
       animate_main_title.start({
         x: 0,
