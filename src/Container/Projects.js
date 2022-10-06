@@ -65,12 +65,7 @@ export default function Projects() {
   }, [mainInView]);
   return (
     <motion.div id="projects" className="project-container">
-      <motion.section ref={main_ref}>
-        <motion.div animate={animate_project_image} className="project-img">
-          <div className="project-image"></div>
-          <motion.div animate={animate_p_i} className="project-i"></motion.div>
-          <img className="p-img" src={Project_image}></img>
-        </motion.div>
+      <motion.section className="project-section" ref={main_ref}>
         <motion.div animate={animate_main_title} className="project-title">
           <div className="project-name">Pathfinding Visualizer</div>
           <div>
@@ -79,6 +74,11 @@ export default function Projects() {
           </div>
           <div className="about">website</div>
           <button className="project-btn">Show more</button>
+        </motion.div>
+        <motion.div animate={animate_project_image} className="project-img">
+          <div className="project-image"></div>
+          <motion.div animate={animate_p_i} className="project-i"></motion.div>
+          <img className="p-img" src={Project_image}></img>
         </motion.div>
       </motion.section>
     </motion.div>
