@@ -149,7 +149,7 @@ export default function Comtainer() {
               <div className="line-1"></div>
               <div className="line-2"></div>
             </div>
-            <div className="about">web designer</div>
+            <div className="about">web developer / web designer</div>
           </motion.div>
         </div>
       </motion.section>

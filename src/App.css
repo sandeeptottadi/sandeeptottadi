@@ -1,7 +1,7 @@
 .App {
   margin: 0;
   padding: 0;
-  background-color: #072041;
+  background-image: linear-gradient(#072041, #030d19);
   width: 100%;
   overflow-x: hidden;
   color: white;
@@ -130,7 +130,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .circles {
     height: 700px;
     width: 700px;
@@ -138,5 +138,12 @@
   }
   .circle {
     right: 25%;
+  }
+  .title {
+    font-size: 1rem;
+    letter-spacing: 0.07em;
+  }
+  .profile-logos {
+    display: none;
   }
 }

@@ -113,11 +113,13 @@ section {
 }
 
 .about {
+  width: 200px;
   margin-top: 20px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   letter-spacing: 0.1em;
   white-space: normal;
+  font-family: "Courier New", Courier, monospace;
 }
 
 @media (max-width: 950px) {
@@ -160,8 +162,8 @@ section {
     left: -30%;
   }
   .main-title {
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
   }
   .about {
     font-size: 1.2rem;
@@ -191,8 +193,8 @@ section {
     left: -30%;
   }
   .main-title {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
   }
   .about {
     font-size: 1rem;
@@ -205,7 +207,7 @@ section {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .moon-img {
     height: 250px;
     width: 250px;
@@ -231,11 +233,11 @@ section {
   }
   .main-title {
     top: 68%;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
   .about {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
@@ -253,7 +255,7 @@ section {
     top: 21%;
   }
   .name {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 900;
   }
   .shadow {
@@ -266,7 +268,11 @@ section {
   }
   .main-title {
     top: 70%;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+  }
+  .about {
+    width: 150px;
+    font-size: 0.9rem;
   }
 }
