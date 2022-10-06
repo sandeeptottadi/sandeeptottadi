@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   height: calc(100vh + 20px);
+  margin: 20px;
 }
 
 .project-title {
@@ -29,8 +30,8 @@
 .project-img {
   position: absolute;
   top: 50%;
-  left: 70%;
-  translate: -50% -50%;
+  right: 5%;
+  translate: 0% -50%;
   height: 400px;
   width: 600px;
   background-color: #072041;
@@ -38,12 +39,6 @@
 
 img {
   object-fit: cover;
-}
-
-.project-img-animate {
-  top: 50%;
-
-  left: 70%;
 }
 
 .project-image {
@@ -67,6 +62,10 @@ img {
   z-index: 5;
 }
 
+button {
+  cursor: pointer;
+}
+
 .project-btn {
   margin-top: 20px;
   font-size: 1.8rem;
@@ -83,4 +82,32 @@ img {
   position: absolute;
   height: 100%;
   width: 100%;
+}
+
+@media (max-width: 950px) {
+  .project-name {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .project-name {
+    font-size: 3rem;
+  }
+  .project-btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 790px) {
+  .project-img {
+    height: 300px;
+    width: 450px;
+  }
+  .project-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 450px) {
 }

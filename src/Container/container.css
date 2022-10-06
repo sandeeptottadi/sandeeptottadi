@@ -215,8 +215,8 @@ section {
     left: -30%;
   }
   .moon {
-    left: 24%;
-    top: 21%;
+    left: 20%;
+    top: 12%;
   }
   .name {
     font-size: 2.5rem;
@@ -230,7 +230,7 @@ section {
     left: -30%;
   }
   .main-title {
-    top: 70%;
+    top: 68%;
     height: 200px;
     width: 200px;
   }
