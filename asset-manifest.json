@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sandeeptottadi/static/css/main.430544e1.css",
-    "main.js": "/sandeeptottadi/static/js/main.d4573d6f.js",
+    "main.css": "/sandeeptottadi/static/css/main.f5cb4c61.css",
+    "main.js": "/sandeeptottadi/static/js/main.b0583b43.js",
     "static/js/787.9e6188a1.chunk.js": "/sandeeptottadi/static/js/787.9e6188a1.chunk.js",
     "static/media/Sorting-Visualizer.mp4": "/sandeeptottadi/static/media/Sorting-Visualizer.2f17dd3e82faea19bea5.mp4",
     "static/media/Joby.mp4": "/sandeeptottadi/static/media/Joby.66815f1bfa0d8a50d30f.mp4",
@@ -16,12 +16,12 @@
     "index.html": "/sandeeptottadi/index.html",
     "static/media/twitter.svg": "/sandeeptottadi/static/media/twitter.001edf8d3826a2cf8d8fb4ec7125846d.svg",
     "static/media/arrow.svg": "/sandeeptottadi/static/media/arrow.e18f671bc983f6150f3fcf87132ba03d.svg",
-    "main.430544e1.css.map": "/sandeeptottadi/static/css/main.430544e1.css.map",
-    "main.d4573d6f.js.map": "/sandeeptottadi/static/js/main.d4573d6f.js.map",
+    "main.f5cb4c61.css.map": "/sandeeptottadi/static/css/main.f5cb4c61.css.map",
+    "main.b0583b43.js.map": "/sandeeptottadi/static/js/main.b0583b43.js.map",
     "787.9e6188a1.chunk.js.map": "/sandeeptottadi/static/js/787.9e6188a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.430544e1.css",
-    "static/js/main.d4573d6f.js"
+    "static/css/main.f5cb4c61.css",
+    "static/js/main.b0583b43.js"
   ]
 }
