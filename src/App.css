@@ -1,0 +1,250 @@
+.App {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(#072041, #030d19);
+  width: 100%;
+  color: white;
+}
+
+#bubble-container {
+  position: relative;
+  float: right;
+  height: 100vh;
+  width: 70%;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  transition: 2s;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: fit-content;
+  height: 100vh;
+}
+
+.App-header {
+  position: fixed;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 15px;
+  z-index: 999;
+}
+
+.title {
+  position: relative;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  margin-left: 20px;
+}
+
+.links {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  right: 5%;
+  background-color: #1c1d20;
+  border-radius: 999px;
+  padding: 5px;
+}
+
+.profile-logos {
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic {
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  right: 35%;
+  top: -10%;
+  perspective: 800px;
+}
+
+.circles {
+  position: absolute;
+  height: 1200px;
+  top: -40%;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  transform-style: preserve-3d;
+  justify-content: center;
+}
+
+.circle-1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  transform: translateZ(0px);
+  animation: showForward 1s infinite alternate ease-in-out;
+}
+
+.circle-2 {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  left: 7%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+  animation: showForward 1.1s infinite alternate ease-in-out;
+}
+
+.circle-3 {
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  left: 13%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+  animation: showForward 1.2s infinite alternate ease-in-out;
+}
+.circle-4 {
+  position: absolute;
+  height: 70%;
+  width: 70%;
+  left: 20%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+  animation: showForward 1.3s infinite alternate ease-in-out;
+}
+.circle-5 {
+  position: absolute;
+  height: 60%;
+  width: 60%;
+  left: 26%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+  animation: showForward 1.4s infinite alternate ease-in-out;
+}
+
+.circle-6 {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  left: 32%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+  animation: showForward 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes showForward {
+  100% {
+    transform: rotateX(10deg) translateZ(-50px);
+  }
+}
+
+@media (max-width: 950px) {
+  .circles {
+    height: 1000px;
+    width: 1000px;
+  }
+}
+
+@media (max-width: 550px) {
+  .circles {
+    height: 700px;
+    width: 700px;
+    top: -10%;
+  }
+  .circle {
+    right: 25%;
+  }
+  .title {
+    font-size: 1rem;
+    letter-spacing: 0.07em;
+  }
+  .profile-logos {
+    display: none;
+  }
+}
+
+.menubars {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.links,
+.profile-pic {
+  width: 50px;
+  height: 50px;
+}
+
+.menubar {
+  width: 32.22px;
+  height: 3px;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.bar-1,
+.bar-2 {
+  margin-bottom: 8px;
+}
+
+.bar-1-open {
+  rotate: 45deg;
+  transform-origin: 0%;
+}
+
+.bar-2-open {
+  opacity: 0;
+}
+
+.bar-3-open {
+  rotate: -45deg;
+  transform-origin: left;
+}
+
+.flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.flex-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

@@ -1,0 +1,244 @@
+.footer-container {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c1d20;
+  border-radius: 65% 65% 0% 0%;
+  box-shadow: 0 0 2px black;
+  transition: 0.5s ease-in-out;
+}
+
+.footer-open {
+  animation: open-footer 0.5s forwards ease-in;
+}
+
+@keyframes open-footer {
+  100% {
+    border-radius: 0%;
+  }
+}
+
+.footer-main {
+  width: 60%;
+  padding: 0%;
+  position: relative;
+  margin-top: 100px;
+  z-index: 2;
+}
+
+.footer-container h2 {
+  font-family: "Dennis Sans", sans-serif;
+  font-size: 70px;
+  width: 500px;
+  margin-left: 0%;
+  max-width: 80%;
+}
+
+.contact-btn {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 50%;
+  color: white;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  background-color: #ff3557;
+  z-index: 2;
+}
+
+.contact-btn:hover::after {
+  height: 100%;
+}
+
+.contact-btn-div {
+  position: relative;
+  margin-top: 90px;
+  z-index: 1;
+  height: 1px;
+  width: 100%;
+  background-color: #d7d7d7;
+}
+
+.footer {
+  position: absolute;
+  margin: auto;
+  bottom: 0%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0px;
+  justify-content: space-between;
+}
+
+.footer-left {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-right {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section-heading {
+  font-family: sans-serif;
+  color: #d7d7d7;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.footer-section-links {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.footer-section-links:hover {
+  color: #455ce9;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.contact-button {
+  margin-top: 20px;
+  margin-right: 20px;
+  position: relative;
+  padding: 15px 30px;
+  background-color: transparent;
+  z-index: 1;
+  border-radius: 999px;
+  width: fit-content;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  border: 1px solid #d7d7d7;
+}
+
+.contact-button::after {
+  position: absolute;
+  bottom: 0%;
+  content: "";
+  left: 0%;
+  width: 100%;
+  height: 0%;
+  border-radius: 50% 50% 0% 0%;
+  background-color: #455ce9;
+  transition: 0.5s ease-out;
+  z-index: -1;
+}
+
+/* .contact-button::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  z-index: -2;
+} */
+
+.contact-button:hover::after {
+  height: 130%;
+}
+#hands {
+  transform: translateY(0px);
+  display: inline-block;
+}
+
+.hand-shake {
+  animation: handShake 0.5s infinite ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes handShake {
+  50% {
+    transform: translateY(-10px) rotate(20deg);
+  }
+  100% {
+    transform: translateY(5px) rotate(-10deg);
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer-container {
+    border-radius: 45% 45% 0% 0%;
+  }
+  .footer-container h2 {
+    font-size: 50px;
+  }
+  .contact-buttons {
+    margin-top: 60px;
+  }
+  .contact-button {
+    padding: 5px 15px;
+  }
+  .footer-main {
+    width: 70%;
+    padding: 20px;
+  }
+  .contact-btn {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 630px) {
+  .footer-container {
+    border-radius: 20% 20% 0% 0%;
+  }
+  .footer-container h2 {
+    font-size: 35px;
+  }
+  .footer-left {
+    margin-left: 30px;
+  }
+  .footer-right {
+    display: none;
+  }
+  .contact-button {
+    padding: 10px 15px;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-main {
+    width: 80%;
+    padding: 30px;
+  }
+  .contact-btn {
+    padding: 6px;
+    width: 105px;
+    height: 105px;
+    font-size: 15px;
+  }
+  .contact-buttons {
+    width: 100%;
+  }
+  .contact-btn-div {
+    margin-top: 82.5px;
+  }
+}

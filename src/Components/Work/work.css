@@ -1,0 +1,11 @@
+.globe {
+  margin-right: 10px;
+  height: 25px;
+  width: 25px;
+}
+
+.project-name sub {
+  font-size: 14px;
+  margin-left: 10px;
+  font-family: sans-serif;
+}
